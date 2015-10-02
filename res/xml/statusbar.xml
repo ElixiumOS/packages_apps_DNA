@@ -16,6 +16,11 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings" >
 
+    <Preference
+        android:title="@string/battery_setting_title"
+        android:summary="@string/battery_setting_summary"
+        android:fragment="com.elix.dna.BatteryFragment" />
+       
     <ListPreference
         android:key="quick_pulldown"
         android:title="@string/quick_pulldown_title"
