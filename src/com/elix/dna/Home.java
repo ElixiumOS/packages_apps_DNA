@@ -18,6 +18,7 @@
 package com.elix.dna;
 
 import com.elix.dna.Device;
+import com.elix.dna.fragments.StatusbarFragment;
 
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 import android.app.Activity;
@@ -35,7 +36,8 @@ public class Home extends PreferenceActivity {
     @Override
     protected boolean isValidFragment(String fragmentName) {
         return Device.class.getName().equals(fragmentName)
-			  || AboutApp.class.getName().equals(fragmentName);
+		  || StatusbarFragment.class.getName().equals(fragmentName)
+		  || AboutApp.class.getName().equals(fragmentName);
     }
 
     @Override

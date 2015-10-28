@@ -64,13 +64,11 @@
     <string name="quicksettings_title">Quick Settings</string>
     <string name="recents_title">Recents Screen</string>
     <string name="recents_summary">Choose what you preefere for the recents screen</string>
-    <string name="statusbar_title">Status bar</string>
     <string name="volume_title">Volume rockers</string>
     <string name="notifications_title">Notifications</string>
     <string name="notifications_summary">Customize the HeadsUp notifications</string>
     <string name="statusbar_title">Statusbar</string>
-    <string name="statusbar_summary">Customize qs and much more</string>
-    <string name="statusbar_fragment_title">Statusbar Customizations</string>
+    <string name="statusbar_summary">Customize statusbar actions</string>
     <string name="ls_summary">Customize lockscreen and her functions</string>
     <string name="ls_title">Lockscreen</string>
     <string name="save">Save</string>
@@ -83,5 +81,12 @@
     <!-- General strings -->
     <string name="ok">OK</string>
     <string name="reset">Reset</string>
+
+    <!-- Status bar quick qs pulldown -->
+    <string name="title_quick_pulldown">Quick pulldown</string>
+    <string name="summary_quick_pulldown">%1$s edge of the status bar pulls down Quick Settings</string>
+    <string name="quick_pulldown_off">Off</string>
+    <string name="quick_pulldown_left">Left</string>
+    <string name="quick_pulldown_right">Right</string>
 
 </resources>

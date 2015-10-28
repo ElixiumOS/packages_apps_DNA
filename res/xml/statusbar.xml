@@ -13,14 +13,14 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings" >
 
-    <PreferenceScreen
-        android:key="n6" >
-    <intent
-        android:action="android.intent.action.VIEW"
-        android:data="http://forum.xda-developers.com/nexus-6/development/rom-t3473518" />
-    </PreferenceScreen>
-
+    <ListPreference
+        android:key="quick_pulldown"
+        android:title="@string/title_quick_pulldown"
+        android:entries="@array/quick_pulldown_entries"
+        android:entryValues="@array/quick_pulldown_values"
+        android:persistent="false" />
 
 </PreferenceScreen>
