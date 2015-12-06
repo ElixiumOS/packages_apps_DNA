@@ -135,4 +135,24 @@
     <string name="set">Imposta</string>
     <string name="color_default">Predefinito</string>
 
+    <!-- SlimSizer  -->
+    <string name="listsystem">lista</string>
+    <string name="sizer_title">Rimozione App</string>
+    <string name="caution">Attenzione!</string>
+    <string name="sizer_message_startup">Questo strumento ti permette di rimuovere app di sistema, rimuovi solo app che sai non daranno problemi</string>
+    <string name="cancel">Cancella</string>
+    <string name="sizer_message_delete">Sei sicuro di voler cacnellare queste/a app?</string>
+    <string name="btn_delete">Cancella le app selezionate ora!</string>
+    <string name="delete_progress_title">Cancellazzione..</string>
+    <string name="delete_progress">I file selezionati stanno per essere rimossi...</string>
+    <string name="delete_success">Cancellati</string>
+    <string name="delete_fail">Impossibile Cancellare</string>
+    <string name="btn_profile">Profilo</string>
+    <string name="sizer_message_sdnowrite">Impossibile scrivere sulla SD Card.</string>
+    <string name="sizer_message_sdnoread">Impossibile leggere la SD Card.</string>
+    <string name="sizer_message_filesuccess">Profilo Creato.</string>
+    <string name="sizer_message_filefail">Creazione profilo fallita.</string>
+    <string name="sizer_message_noselect">Non è selezionato nulla.</string>
+    <string name="system_app_remover">System App Remover</string>
+
 </resources>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright (C) 2014-2016 The Dirty Unicorns Project
+     Copyright (C) 2017 ElixiumOS
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -16,10 +17,17 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings" >
 
+    <!-- Toast Icon Switch -->
         <com.elix.dna.preferences.SystemSettingSwitchPreference
             android:key="toast_icon"
             android:title="@string/toast_icon_title"
             android:summary="@string/toast_icon_summary"
             android:defaultValue="false" />
+
+    <!-- System APP Remover -->
+    <Preference
+            android:id="@+id/system_app_remover"
+            android:title="@string/system_app_remover"
+            android:fragment="com.elix.dna.fragments.SystemappRemover" />
 
 </PreferenceScreen>
