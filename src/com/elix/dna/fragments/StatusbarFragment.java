@@ -16,6 +16,7 @@
 
 package com.elix.dna.fragments;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.ContentResolver;
 import android.content.res.Resources;
@@ -28,12 +29,14 @@ import android.preference.PreferenceCategory;
 import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.provider.Settings;
+import static android.provider.Settings.System.DOUBLE_TAP_SLEEP_GESTURE;
 
 import java.util.Locale;
 import android.text.TextUtils;
 import android.view.View;
 
 import com.elix.dna.R;
+import com.android.settings.dashboard.SummaryLoader;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 import com.android.settings.Utils;
@@ -76,6 +79,46 @@ public class StatusbarFragment extends SettingsPreferenceFragment implements OnP
     protected int getMetricsCategory() {
         return MetricsEvent.DNA;
     }
+
+    public static String toString(boolean bool, String trueString, String falseString) {
+        return bool ? trueString : falseString;
+    }
+
+    private static class SummaryProvider implements SummaryLoader.SummaryProvider {
+        private final Context mContext;
+        private final SummaryLoader mLoader;
+
+        private SummaryProvider(Context context, SummaryLoader loader) {
+            mContext = context;
+            mLoader = loader;
+        }
+
+        @Override
+        public void setListening(boolean listening) {
+            if (listening) {
+                updateSummary();
+            }
+        }
+
+        private void updateSummary() {
+            final String summary_text, dt2s_summary;
+            boolean dt2sEnabled = Settings.System.getInt(mContext.getContentResolver(),
+                    DOUBLE_TAP_SLEEP_GESTURE, 0) == 1;
+            dt2s_summary = dt2sEnabled ? mContext.getString(R.string.dt2s_on_summary)
+                    : mContext.getString(R.string.dt2s_off_summary);
+            summary_text = String.format(" / ", dt2s_summary);
+            mLoader.setSummary(this, summary_text);
+        }
+    }
+
+    public static final SummaryLoader.SummaryProviderFactory SUMMARY_PROVIDER_FACTORY
+            = new SummaryLoader.SummaryProviderFactory() {
+        @Override
+        public SummaryLoader.SummaryProvider createSummaryProvider(Activity activity,
+                                                                   SummaryLoader summaryLoader) {
+            return new SummaryProvider(activity, summaryLoader);
+        }
+    };
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
