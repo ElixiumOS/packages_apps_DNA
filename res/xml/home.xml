@@ -21,7 +21,7 @@
 
     <Preference
         android:layout="@layout/button_card"
-        android:fragment="com.android.settings.ButtonsSettingsActivity" />
+        android:fragment="com.elix.dna.fragments.ButtonsFragment" />
 	
     <Preference
         android:layout="@layout/power_card"
