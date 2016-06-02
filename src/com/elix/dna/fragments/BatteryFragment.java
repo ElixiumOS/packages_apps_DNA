@@ -17,7 +17,7 @@
  *
  */
 
-package com.elix.dna;
+package com.elix.dna.fragments;
 
 import android.app.AlertDialog;
 import android.content.ContentResolver;

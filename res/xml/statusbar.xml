@@ -19,7 +19,12 @@
     <Preference
         android:title="@string/battery_setting_title"
         android:summary="@string/battery_setting_summary"
-        android:fragment="com.elix.dna.BatteryFragment" />
+        android:fragment="com.elix.dna.fragments.BatteryFragment" />
+
+    <Preference
+        android:title="@string/clock_settings_title"
+        android:summary="@string/clock_settings_summary"
+        android:fragment="com.elix.dna.fragments.ClockFragment" />
        
     <ListPreference
         android:key="quick_pulldown"
