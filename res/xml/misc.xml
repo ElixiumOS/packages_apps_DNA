@@ -30,6 +30,14 @@
             android:summary="@string/toast_icon_summary"
             android:defaultValue="false" />
 
+    <!-- Screenshot crop and share -->
+    <com.elix.dna.preferences.SystemCheckBoxPreference
+           android:key="screenshot_crop_and_share"
+           android:title="@string/screenshot_crop_and_share_title"
+           android:summary="@string/screenshot_crop_and_share_summary"
+           android:defaultValue="false" />
+
+
     <!-- System APP Remover -->
     <Preference
             android:id="@+id/system_app_remover"
