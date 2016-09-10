@@ -21,6 +21,16 @@
         android:summary="@string/statusbar_summary"
         android:title="@string/statusbar_title" />
         <header
+        android:icon="@drawable/ic_buttons"
+        android:title="@string/button_pref_title"
+        android:summary="@string/button_summary"
+        android:fragment="com.elix.dna.fragments.ButtonFragment" />
+        <header
+        android:icon="@drawable/ic_power"
+        android:title="@string/powermenu_title"
+        android:summary="@string/powermenu_summary"
+        android:fragment="com.elix.dna.fragments.PowerMenuSettings" />
+        <header
         android:fragment="com.elix.dna.Device"
         android:icon="@drawable/ic_devices"
         android:title="@string/devices" />

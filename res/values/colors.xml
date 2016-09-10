@@ -26,7 +26,4 @@
     <color name="icon_tint_color">@color/material_deep_teal_500</color>
     <color name="theme_accent">#ff009688</color>
 
-    <!-- General -->
-    <color name="theme_accent">@*android:color/material_deep_teal_500</color>
-
 </resources>
