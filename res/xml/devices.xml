@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceScreen
+        android:key="n6" >
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="http://forum.xda-developers.com/nexus-6/development/rom-t3473518" />
+    </PreferenceScreen>
+
+
+</PreferenceScreen>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:key="n6"
+        android:src="@drawable/nexus6"
+        android:layout_width="204dp"
+        android:layout_height="190dp"
+        android:layout_marginLeft="-25dp"
+        android:id="@+id/imageView" />
+
+    <TextView
+        android:text="@string/device_nexus_6"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="-120dp"
+        android:id="@+id/textView"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal|bold"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="@string/device_nexus_6_maintainer"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/textView"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal|bold" />
+
+
+    <ImageView
+        android:key="n6"
+        android:src="@drawable/nexus9"
+        android:layout_width="204dp"
+        android:layout_height="190dp"
+        android:layout_marginLeft="-24dp"
+        android:layout_marginTop="75dp"
+        android:id="@+id/imageView" />
+
+    <TextView
+        android:text="@string/device_nexus_9"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="-120dp"
+        android:id="@+id/textView"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal|bold"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="@string/device_nexus_9_maintainer"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="207dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/textView"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal|bold"
+        android:textAlignment="center" />
+
+    <ImageView
+        android:key="n6"
+        android:src="@drawable/oneplus3t"
+        android:layout_width="204dp"
+        android:layout_height="190dp"
+        android:layout_marginLeft="-25dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/imageView" />
+
+    <TextView
+        android:text="@string/device_op3t"
+        android:layout_width="84dp"
+        android:layout_height="31dp"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="-120dp"
+        android:id="@+id/textView"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal|bold"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="@string/device_op3t_maintainer"
+        android:layout_width="120dp"
+        android:layout_height="21dp"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="-10dp"
+        android:id="@+id/textView"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal|bold" />
+</LinearLayout>
