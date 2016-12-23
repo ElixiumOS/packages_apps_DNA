@@ -23,7 +23,7 @@
         <ImageView
             android:layout_width="625dp"
             android:layout_height="100dp"
-            android:src="@drawable/aotp_about"
+            android:src="@drawable/app_logo"
             android:scaleType="centerInside"
             android:adjustViewBounds="true" />
    
