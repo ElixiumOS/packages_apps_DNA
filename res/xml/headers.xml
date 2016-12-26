@@ -3,7 +3,7 @@
 
     <header
         android:fragment="com.elix.dna.Device"
-        android:icon="@drawable/ic_about"
+        android:icon="@drawable/ic_devices"
         android:title="@string/devices" />
 	<header
         android:fragment="com.elix.dna.Home$AboutApp"
