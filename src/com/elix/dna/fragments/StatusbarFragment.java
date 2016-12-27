@@ -22,11 +22,11 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.preference.SwitchPreference;
-import android.preference.ListPreference;
-import android.preference.Preference;
+import android.support.v7.preference.ListPreference;
+import android.support.v7.preference.Preference;
 import android.preference.PreferenceCategory;
-import android.preference.PreferenceScreen;
-import android.preference.Preference.OnPreferenceChangeListener;
+import android.support.v7.preference.PreferenceScreen;
+import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.provider.Settings;
 
 import java.util.Locale;
@@ -35,12 +35,12 @@ import android.view.View;
 
 import com.elix.dna.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.internal.logging.MetricsLogger;
+import com.android.internal.logging.MetricsProto.MetricsEvent;
 import com.android.settings.Utils;
 
 public class StatusbarFragment extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
-    private static final String PRE_QUICK_PULLDOWN = "quick_pulldown";
+    private static final String QUICK_PULLDOWN = "quick_pulldown";
 
     private ListPreference mQuickPulldown;
 
@@ -58,13 +58,8 @@ public class StatusbarFragment extends SettingsPreferenceFragment implements OnP
         int quickPulldownValue = Settings.System.getIntForUser(getContentResolver(),
                 Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN, 0, UserHandle.USER_CURRENT);
         mQuickPulldown.setValue(String.valueOf(quickPulldownValue));
-        updatePulldownSummary(quickPulldownValue);
-        }
-    }
+        updateQuickPulldownSummary(quickPulldownValue);
 
-    @Override
-    protected int getMetricsCategory() {
-        return MetricsLogger.DNA;
     }
 
     @Override
@@ -73,8 +68,8 @@ public class StatusbarFragment extends SettingsPreferenceFragment implements OnP
     }
 
     @Override
-    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
-        return super.onPreferenceTreeClick(preferenceScreen, preference);
+    protected int getMetricsCategory() {
+        return MetricsEvent.DNA;
     }
 
     @Override
@@ -83,7 +78,7 @@ public class StatusbarFragment extends SettingsPreferenceFragment implements OnP
             int quickPulldownValue = Integer.valueOf((String) objValue);
             Settings.System.putIntForUser(getContentResolver(), Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN,
                     quickPulldownValue, UserHandle.USER_CURRENT);
-            updatePulldownSummary(quickPulldownValue);
+            updateQuickPulldownSummary(quickPulldownValue);
             return true;
         }
         return false;

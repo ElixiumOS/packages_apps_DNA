@@ -26,7 +26,7 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 import android.support.v7.preference.*;
 
-import com.android.settings.R;
+import com.elix.dna.R;
 
 public class CustomSeekBarPreference extends Preference implements SeekBar.OnSeekBarChangeListener {
     private final String TAG = getClass().getName();

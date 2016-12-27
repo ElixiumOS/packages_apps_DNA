@@ -31,6 +31,9 @@ import android.preference.PreferenceActivity;
 import android.preference.PreferenceFragment;
 import com.elix.dna.R;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Home extends PreferenceActivity {
 
     @Override
