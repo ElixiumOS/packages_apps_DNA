@@ -91,10 +91,12 @@
     <string name="reset">Reset</string>
 
     <!-- Status bar quick qs pulldown -->
-    <string name="title_quick_pulldown">Quick pulldown</string>
-    <string name="summary_quick_pulldown">Quick pulldown dal lato %1$o</string>
+    <string name="quick_pulldown_title">Quick pulldown</string>
+    <string name="quick_pulldown_summary">Quick pulldown dal lato %1$</string>
+    <string name="quick_pulldown_summary_always">Il QuickPulldown è attivo su entrambi i lati</string>
     <string name="quick_pulldown_off">Spento</string>
-    <string name="quick_pulldown_left">Sinistra</string>
-    <string name="quick_pulldown_right">Destra</string>
+    <string name="quick_pulldown_left">Sinistro</string>
+    <string name="quick_pulldown_right">Destro</string>
+    <string name="quick_pulldown_always">Sempre</string>
 
 </resources>

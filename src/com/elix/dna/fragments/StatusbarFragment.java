@@ -56,10 +56,9 @@ public class StatusbarFragment extends SettingsPreferenceFragment implements OnP
         mQuickPulldown = (ListPreference) findPreference(QUICK_PULLDOWN);
         mQuickPulldown.setOnPreferenceChangeListener(this);
         int quickPulldownValue = Settings.System.getIntForUser(getContentResolver(),
-                Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN, 0, UserHandle.USER_CURRENT);
+                Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN, 1, UserHandle.USER_CURRENT);
         mQuickPulldown.setValue(String.valueOf(quickPulldownValue));
-        updateQuickPulldownSummary(quickPulldownValue);
-
+        updatePulldownSummary(quickPulldownValue);
     }
 
     @Override
@@ -74,29 +73,29 @@ public class StatusbarFragment extends SettingsPreferenceFragment implements OnP
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
-           if (preference == mQuickPulldown) {
+         if (preference == mQuickPulldown) {
             int quickPulldownValue = Integer.valueOf((String) objValue);
             Settings.System.putIntForUser(getContentResolver(), Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN,
                     quickPulldownValue, UserHandle.USER_CURRENT);
-            updateQuickPulldownSummary(quickPulldownValue);
+            updatePulldownSummary(quickPulldownValue);
             return true;
         }
         return false;
     }
 
-    private void updateQuickPulldownSummary(int value) {
+    private void updatePulldownSummary(int value) {
         Resources res = getResources();
-
         if (value == 0) {
-            // quick pulldown deactivated
+            // Quick Pulldown deactivated
             mQuickPulldown.setSummary(res.getString(R.string.quick_pulldown_off));
+        } else if (value == 3) {
+            // Quick Pulldown always
+            mQuickPulldown.setSummary(res.getString(R.string.quick_pulldown_summary_always));
         } else {
-            Locale l = Locale.getDefault();
-            boolean isRtl = TextUtils.getLayoutDirectionFromLocale(l) == View.LAYOUT_DIRECTION_RTL;
             String direction = res.getString(value == 2
-                    ? (isRtl ? R.string.quick_pulldown_right : R.string.quick_pulldown_left)
-                    : (isRtl ? R.string.quick_pulldown_left : R.string.quick_pulldown_right));
-            mQuickPulldown.setSummary(res.getString(R.string.summary_quick_pulldown, direction));
-        }
+                    ? R.string.quick_pulldown_left
+                    : R.string.quick_pulldown_right);
+            mQuickPulldown.setSummary(res.getString(R.string.quick_pulldown_summary, direction));
+       }
     }
 }
