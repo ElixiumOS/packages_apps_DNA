@@ -14,7 +14,7 @@
  * under the License.
  */
 
-package com.android.settings.jdc.utils;
+package com.elix.dna.utils;
 
 import android.app.Activity;
 import android.content.Context;
