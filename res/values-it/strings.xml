@@ -105,7 +105,7 @@
     <string name="enable_navigation_bar_title">Abilità Navbar</string>
     <string name="enable_navigation_bar_summary">Mostra i tasti a schermo</string>
     <string name="hardware_brightness_keys_title">Illuminazione tasti</string>
-    <string name="hardware_brightness_keys_summary">Abilità l'illuminazione dei tasti hw</string>
+    <string name="hardware_brightness_keys_summary">Abilità l\'illuminazione dei tasti hw</string>
     <string name="hardware_keys_home_key_title">Tasto Home</string>
     <string name="hardware_keys_back_key_title">Tasto Indietro</string>
     <string name="hardware_keys_menu_key_title">Tasto Menu</string>
