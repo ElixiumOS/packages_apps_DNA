@@ -19,7 +19,7 @@ package com.elix.dna;
 
 import com.elix.dna.Device;
 import com.elix.dna.fragments.StatusbarFragment;
-//import com.elix.dna.fragments.ButtonFragment;
+import com.elix.dna.fragments.ButtonsFragment;
 //import com.elix.dna.fragments.PowerMenuSettings;
 
 import com.android.internal.logging.MetricsProto.MetricsEvent;
@@ -42,7 +42,7 @@ public class Home extends PreferenceActivity {
     protected boolean isValidFragment(String fragmentName) {
         return Device.class.getName().equals(fragmentName)
 		  || StatusbarFragment.class.getName().equals(fragmentName)
-//		  || ButtonFragment.class.getName().equals(fragmentName)
+		  || ButtonsFragment.class.getName().equals(fragmentName)
 //		  || PowerMenuSettings.class.getName().equals(fragmentName)
 		  || AboutApp.class.getName().equals(fragmentName);
     }
