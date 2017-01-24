@@ -20,12 +20,12 @@
         android:icon="@drawable/ic_statusbar"
         android:summary="@string/statusbar_summary"
         android:title="@string/statusbar_title" />
-        <header
+<!--    <header
         android:icon="@drawable/ic_buttons"
         android:title="@string/button_pref_title"
         android:summary="@string/button_summary"
         android:fragment="com.elix.dna.fragments.ButtonFragment" />
-<!--    <header
+        <header
         android:icon="@drawable/ic_power"
         android:title="@string/powermenu_title" 
         android:summary="@string/powermenu_summary"
