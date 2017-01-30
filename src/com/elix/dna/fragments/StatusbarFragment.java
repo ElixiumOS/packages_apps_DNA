@@ -44,9 +44,13 @@ public class StatusbarFragment extends SettingsPreferenceFragment implements OnP
 
     private ListPreference mQuickPulldown;
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+        @Override
+        public void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            createCustomView();
+        }
+
+        private PreferenceScreen createCustomView() {
 
         addPreferencesFromResource(R.xml.statusbar);
         final ContentResolver resolver = getActivity().getContentResolver();
@@ -59,6 +63,8 @@ public class StatusbarFragment extends SettingsPreferenceFragment implements OnP
                 Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN, 0, UserHandle.USER_CURRENT);
         mQuickPulldown.setValue(String.valueOf(quickPulldownValue));
         updatePulldownSummary(quickPulldownValue);
+
+        return prefSet;
     }
 
     @Override
