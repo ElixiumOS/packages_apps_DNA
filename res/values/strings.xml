@@ -73,8 +73,8 @@
     <string name="ls_title">Lockscreen</string>
     <string name="save">Save</string>
     <string name="cancel">Cancel</string>
-    <string name="other_title">Other Customizations</string>
-    <string name="other_summary">Much more misc customizations!</string>
+    <string name="other_title">Misc</string>
+    <string name="other_summary">More misc customizations!</string>
     <string name="button_title">Buttons and functions</string>
     <string name="button_summary">Customize the Navbar and her effects</string>
 

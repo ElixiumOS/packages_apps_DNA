@@ -43,7 +43,7 @@ public class Home extends PreferenceActivity {
         return Device.class.getName().equals(fragmentName)
 		  || StatusbarFragment.class.getName().equals(fragmentName)
 //		  || ButtonFragment.class.getName().equals(fragmentName)
-//		  || PowerMenuSettings.class.getName().equals(fragmentName)
+		  || MiscFrag.class.getName().equals(fragmentName)
 		  || AboutApp.class.getName().equals(fragmentName);
     }
 
@@ -61,4 +61,12 @@ public class Home extends PreferenceActivity {
         }
     }
 
+	public static class MiscFrag extends PreferenceFragment {
+
+            @Override
+            public void onCreate(Bundle savedInstanceState) {
+                super.onCreate(savedInstanceState); 
+                addPreferencesFromResource(R.xml.misc);
+        }
+    }
 }
