@@ -21,7 +21,7 @@
         android:summary="@string/statusbar_summary"
         android:title="@string/statusbar_title" />
         <header
-        android:fragment="com.elix.dna.Device"
+        android:fragment="com.elix.dna.Home$MiscFrag"
         android:icon="@drawable/ic_other"
         android:title="@string/other_title"
         android:summary="@string/other_summary" />
