@@ -17,8 +17,14 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings" >
 
+    <!-- Display Rotation -->
+    <Preference
+             android:title="@string/display_rotation_title"
+             android:summary="@string/display_rotation_summary"
+             android:fragment="com.elix.dna.fragments.DisplayRotation" />
+
     <!-- Toast Icon Switch -->
-        <com.elix.dna.preferences.SystemSettingSwitchPreference
+    <com.elix.dna.preferences.SystemSettingSwitchPreference
             android:key="toast_icon"
             android:title="@string/toast_icon_title"
             android:summary="@string/toast_icon_summary"
