@@ -61,7 +61,7 @@
     <string name="misc_title">Miscellaneous</string>
     <string name="navbar_title">Navigation bar</string>
     <string name="powermenu_title">Power menu</string>
-    <string name="powermenu_summary">Customize the elements in the powe menu</string>
+    <string name="powermenu_summary">Customize the power menu animation</string>
     <string name="quicksettings_title">Quick Settings</string>
     <string name="recents_title">Recents Screen</string>
     <string name="recents_summary">Choose what you preefere for the recents screen</string>
@@ -117,20 +117,13 @@
     <string name="hardware_keys_action_app_switch">Recent apps switcher</string>
     <string name="hardware_keys_action_sleep">Turn screen off</string>
 
-    <!-- Power menu customization -->
-    <string name="power_menu_reboot_title">Restart</string>
-    <string name="power_menu_screenshot_title">Screenshot</string>
-    <string name="power_menu_screenrecord_title">Screen record</string>
-    <string name="power_menu_torch_title">Flashlight</string>
-    <string name="power_menu_airplane_title">Airplane mode</string>
-    <string name="power_menu_users_title">User switcher</string>
-    <string name="power_menu_search_title">Search</string>
-    <string name="power_menu_voice_title">Voice search</string>
-    <string name="power_menu_settings_title">Settings shortcut</string>
-    <string name="power_menu_lockdown_title">Device lockdown</string>
-    <string name="power_menu_bug_report_title">Bug report</string>
-    <string name="power_menu_sound_title">Sound panel</string>
-    <string name="power_menu_bug_report_disabled">Bug reporting is disabled in development settings</string>
+    <!-- Power menu Animations  -->
+    <string name="power_menu_animation_title">Power menu animation</string>
+    <string name="power_menu_animation_summary">Change the enter/exit animation of the power menu</string>
+    <string name="power_menu_animation_dialog_title">Select power menu animation</string>
+    <string name="power_menu_animation_aosp">AOSP (default)</string>
+    <string name="power_menu_animation_bottom">Bottom</string>
+    <string name="power_menu_animation_top">Top</string>
 
     <!-- Toast Icons -->
     <string name="toast_icon_title">Toast icon</string>

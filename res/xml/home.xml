@@ -24,6 +24,15 @@
             android:targetClass="com.elix.dna.fragments.StatusbarFragment" />
 
     </Preference>
+	
+    <Preference
+        android:layout="@layout/power_card" >
+
+        <intent
+            android:targetPackage="com.elix.dna"
+            android:targetClass="com.elix.dna.fragments.PowerFragment" />
+
+    </Preference>
 
     <Preference
             android:layout="@layout/misc_card" >
