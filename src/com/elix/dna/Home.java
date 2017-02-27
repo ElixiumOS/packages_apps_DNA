@@ -1,6 +1,5 @@
 /*
  * Copyright (C) 2017 ElixiumOS
- * Copyright (C) 2016 AOTP - Android Open Tuning Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,39 +16,29 @@
 
 package com.elix.dna;
 
-import com.elix.dna.Device;
-import com.elix.dna.fragments.StatusbarFragment;
-//import com.elix.dna.fragments.ButtonFragment;
-//import com.elix.dna.fragments.PowerMenuSettings;
-
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 import android.app.Activity;
 import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
 import android.os.Bundle;
-import android.view.Surface;
 import android.preference.Preference;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceFragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.Surface;
 import com.elix.dna.R;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Home extends PreferenceActivity {
+public class Home extends PreferenceFragment {
 
     @Override
-    protected boolean isValidFragment(String fragmentName) {
-        return Device.class.getName().equals(fragmentName)
-		  || StatusbarFragment.class.getName().equals(fragmentName)
-//		  || ButtonFragment.class.getName().equals(fragmentName)
-		  || MiscFrag.class.getName().equals(fragmentName)
-		  || AboutApp.class.getName().equals(fragmentName);
-    }
-
-    @Override
-    public void onBuildHeaders(List<Header> target) {
-    loadHeadersFromResource(R.xml.headers, target);
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        addPreferencesFromResource(R.xml.home);
     }
 	
 	public static class AboutApp extends PreferenceFragment {
@@ -69,4 +58,13 @@ public class Home extends PreferenceActivity {
                 addPreferencesFromResource(R.xml.misc);
         }
     }
+	
+	public static class Device extends PreferenceFragment {
+		
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.devices, container, false);
+		
+        }
+    }	
 }

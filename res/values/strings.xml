@@ -24,7 +24,7 @@
     <string name="app_version_category_title">Version of the app</string>
     <string name="app_version_summary">This version is not completly stable</string>
     <string name="app_version">3.0 Test</string>
-    <string name="about_title">About the app</string>
+    <string name="about_title">About</string>
     <string name="about_info">ROM</string>
     <string name="summary_about">Who made this app?</string>
     <string name="about_info_summary">DNA+ is an extensions of the settings app for manage the extra tweaks</string>
@@ -54,6 +54,7 @@
 
     <!-- Categories -->
     <string name="button_title">Buttons</string>
+	<string name="button_summary">Customize the buttons actions</string>
     <string name="gestures_title">Gestures</string>
     <string name="gestures_summary">Disable or enable some goods gestures</string>
     <string name="lockscreen_title">Lock screen</string>
@@ -75,8 +76,6 @@
     <string name="cancel">Cancel</string>
     <string name="other_title">Misc</string>
     <string name="other_summary">More misc customizations!</string>
-    <string name="button_title">Buttons and functions</string>
-    <string name="button_summary">Customize the Navbar and her effects</string>
 
     <!-- General strings -->
     <string name="ok">OK</string>
