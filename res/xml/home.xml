@@ -45,7 +45,7 @@
 
 
     <Preference
-        android:layout="@layout/device_card"
+        android:layout="@layout/device_card" >
 
         <intent
             android:targetPackage="com.elix.dna"
@@ -54,7 +54,7 @@
     </Preference>
 	
     <Preference
-        android:layout="@layout/about_card"
+        android:layout="@layout/about_card" >
 
         <intent
             android:targetPackage="com.elix.dna"
