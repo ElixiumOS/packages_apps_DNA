@@ -24,6 +24,15 @@
             android:targetClass="com.elix.dna.fragments.StatusbarFragment" />
 
     </Preference>
+
+    <Preference
+        android:layout="@layout/button_card" >
+
+        <intent
+            android:targetPackage="com.android.settings"
+            android:targetClass="com.android.settings.ButtonsSettingsActivity" />
+
+    </Preference>
 	
     <Preference
         android:layout="@layout/power_card" >
