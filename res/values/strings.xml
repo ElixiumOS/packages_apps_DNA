@@ -54,7 +54,7 @@
 
     <!-- Categories -->
     <string name="button_title">Buttons</string>
-	<string name="button_summary">Customize the buttons actions</string>
+    <string name="button_summary">Customize the buttons actions</string>
     <string name="gestures_title">Gestures</string>
     <string name="gestures_summary">Disable or enable some goods gestures</string>
     <string name="lockscreen_title">Lock screen</string>

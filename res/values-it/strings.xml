@@ -18,16 +18,8 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Gneric strings and title -->
     <string name="aotp_splash">Elixium</string>
-    <string name="statusbar_title">Barra di stato</string>
-    <string name="statusbar_summary">Modifica la barra di stato e molto altro</string>
-    <string name="ls_summary">Modifica schermata di blocco e le sue funzioni</string>
-    <string name="ls_title">Schermata di blocco</string>
     <string name="save">Save</string>
     <string name="cancel">Cancel</string>
-    <string name="other_title">Altre Impostazioni</string>
-    <string name="other_summary">Impostazioni Minori</string>
-    <string name="button_title">Tasti</string>
-    <string name="button_summary">Modifica il comportamento della Navbar</string>
 
     <!-- Some Shortcuts labels -->
     <string name="notif_shortcut_title_short">Barra di stato</string>
@@ -35,7 +27,7 @@
     <string name="ls_shortcut_title_short">Schermata di blocco</string>
     <string name="ls_shortcut_title_long">Personalizzazioni Schermata di blocco</string>
 	
-	<!-- Devices -->
+    <!-- Devices -->
     <string name="devices">Dispositivi supportati</string>
     <string name="device_op3t">OnePlus3T</string>
     <string name="device_op3t_maintainer">MasterJack1697</string>
@@ -49,11 +41,10 @@
     <!-- About AOTP -->
     <string name="app_version_category_title">Versione Dell\'app</string>
     <string name="app_version_summary">Versione non completamente stabile</string>
-    <string name="app_version">3.0 Test</string>
     <string name="about_title">Info sulla app</string>
     <string name="about_info">ROM</string>
     <string name="summary_about">Chi ha sviluppato questa app?</string>
-    <string name="about_info_summary">Tuning Options è un estensione delle Impostazioni, ed è stata creata per gestire le funzioni extra</string>
+    <string name="about_info_summary">DNA è un estensione delle Impostazioni, ed è stata creata per gestire le funzioni extra</string>
     <string name="about_devs">Gli Sviluppatori</string>
     <string name="about_dev_title">Alessandro Pasini</string>
     <string name="about_dev_summary">AKA MasterJack1697</string>
@@ -62,6 +53,8 @@
     <string name="about_mention1_summary">Il mio maestro, è conosciuto anche come mnemonyc</string>
 
     <!-- Categories -->
+    <string name="button_title">Bottoni</string>
+    <string name="button_summary">Modifica il comportamento dei tasti</string>
     <string name="gestures_title">Gestures</string>
     <string name="gestures_summary">Scegli tra una buona varietà di gestures</string>
     <string name="lockscreen_title">Schermata di blocco</string>
@@ -82,9 +75,7 @@
     <string name="save">Save</string>
     <string name="cancel">Cancel</string>
     <string name="other_title">Altre Impostazioni</string>
-    <string name="other_summary">Impostazioni Minori</string>
-    <string name="button_title">Tasti</string>
-    <string name="button_summary">Modifica il comportamento dei tasti (hw e display)</string>
+    <string name="other_summary">Modifiche Minori</string>
 	
     <!-- General strings -->
     <string name="ok">OK</string>
@@ -126,19 +117,22 @@
     <string name="hardware_keys_action_app_switch">Switch tra app recenti</string>
     <string name="hardware_keys_action_sleep">Spegni lo schermo</string>
 
-    <!-- Power menu customization -->
-    <string name="power_menu_reboot_title">Riavvia</string>
-    <string name="power_menu_screenshot_title">Screenshot</string>
-    <string name="power_menu_screenrecord_title">Screen record</string>
-    <string name="power_menu_torch_title">Torcia</string>
-    <string name="power_menu_airplane_title">Aereoplano</string>
-    <string name="power_menu_users_title">Cambio di utente</string>
-    <string name="power_menu_search_title">Cerca</string>
-    <string name="power_menu_voice_title">Ricerca vocale</string>
-    <string name="power_menu_settings_title">Shortcut impostazioni</string>
-    <string name="power_menu_lockdown_title">Device lockdown</string>
-    <string name="power_menu_bug_report_title">Bug report</string>
-    <string name="power_menu_sound_title">Pannello suoni</string>
-    <string name="power_menu_bug_report_disabled">Bug reporting is disabled in development settings</string>
+    <!-- Power menu Animations  -->
+    <string name="power_menu_animation_title">Animzaioni menu d\'avvio</string>
+    <string name="power_menu_animation_summary">Cambia l\'animazione di comparsa del menu d\'avvio</string>
+    <string name="power_menu_animation_dialog_title">Seleziona l\'animazione</string>
+    <string name="power_menu_animation_aosp">AOSP (default)</string>
+    <string name="power_menu_animation_bottom">Dal basso</string>
+    <string name="power_menu_animation_top">Da sopra</string>
+
+    <!-- Toast Icons -->
+    <string name="toast_icon_title">Toast icon</string>
+    <string name="toast_icon_summary">Display the app icon corresponding with the toast</string>
+
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Scelata Colori</string>
+    <string name="press_color_to_apply">Premi un colore per applicare</string>
+    <string name="set">Imposta</string>
+    <string name="color_default">Predefinito</string>
 
 </resources>
