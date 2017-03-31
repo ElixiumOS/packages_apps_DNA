@@ -15,60 +15,28 @@
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <Preference
+        android:layout="@layout/notif_card"
+        android:fragment="com.elix.dna.fragments.StatusbarFragment" />
 
     <Preference
-        android:layout="@layout/notif_card" >
-
-        <intent
-            android:targetPackage="com.elix.dna"
-            android:targetClass="com.elix.dna.fragments.StatusbarFragment" />
-
-    </Preference>
-
-    <Preference
-        android:layout="@layout/button_card" >
-
-        <intent
-            android:targetPackage="com.android.settings"
-            android:targetClass="com.android.settings.ButtonsSettingsActivity" />
-
-    </Preference>
+        android:layout="@layout/button_card"
+        android:fragment="com.android.settings.ButtonsSettingsActivity" />
 	
     <Preference
-        android:layout="@layout/power_card" >
-
-        <intent
-            android:targetPackage="com.elix.dna"
-            android:targetClass="com.elix.dna.fragments.PowerFragment" />
-
-    </Preference>
+        android:layout="@layout/power_card"
+        android:fragment="com.elix.dna.fragments.PowerFragment" />
 
     <Preference
-            android:layout="@layout/misc_card" >
-
-        <intent
-            android:targetPackage="com.elix.dna"
-            android:targetClass="com.elix.dna.Home$MiscFrag" />
-
-    </Preference>
-
+        android:layout="@layout/misc_card"
+        android:fragment="com.elix.dna.Home$MiscFrag" />
 
     <Preference
-        android:layout="@layout/device_card" >
+        android:layout="@layout/device_card"
+        android:fragment="com.elix.dna.Home$Device" />
 
-        <intent
-            android:targetPackage="com.elix.dna"
-            android:targetClass="com.elix.dna.Home$Device" />
-
-    </Preference>
-	
     <Preference
-        android:layout="@layout/about_card" >
-
-        <intent
-            android:targetPackage="com.elix.dna"
-            android:targetClass="com.elix.dna.Home$AboutApp" />
-
-    </Preference>
+        android:layout="@layout/about_card"
+        android:fragment="com.elix.dna.Home$AboutApp" />
 
 </PreferenceScreen>
