@@ -65,7 +65,7 @@ public class DisplayRotation extends SettingsPreferenceFragment implements OnPre
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsEvent.OMNI_SETTINGS;
+        return MetricsEvent.DNA;
     }
 
     @Override
