@@ -14,6 +14,11 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/powermenu_title" >
 
+         <Preference
+            android:title="@string/powermenu_items_title"
+            android:summary="string/powermenu_items_summary"
+            android:fragment="com.elix.dna.fragments.PowerMenuFragment" />
+
          <ListPreference
             android:key="power_menu_animations"
             android:title="@string/power_menu_animation_title"
