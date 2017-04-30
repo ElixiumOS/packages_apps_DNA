@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2016-2017 AOTP - Android Open Tuning Project
+ * Copyright (C) 2017 ElixiumOS
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,7 +22,20 @@ import android.content.Intent;
 import android.os.Handler;
 import android.os.Bundle;
 
-import com.elix.dna.Home;
+import android.content.res.Configuration;
+
+import android.preference.Preference;
+import android.preference.PreferenceActivity;
+import android.preference.PreferenceFragment;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.Surface;
+
+import com.android.internal.logging.MetricsProto.MetricsEvent;
+
+// import com.elix.dna.Home;
 
 public class Splash extends Activity {
 
@@ -40,4 +54,35 @@ public class Splash extends Activity {
             }
         },SPLASH_TIME_OUT);
     }
-}
+
+    public static class Home extends PreferenceFragment {
+       @Override
+       public void onCreate(Bundle savedInstanceState) {
+          super.onCreate(savedInstanceState);
+          addPreferencesFromResource(R.xml.home);
+        }
+    }
+
+    public static class AboutApp extends PreferenceFragment {
+       @Override
+       public void onCreate(Bundle savedInstanceState) {
+           super.onCreate(savedInstanceState); 
+           addPreferencesFromResource(R.xml.about);
+        }
+    }
+
+    public static class MiscFrag extends PreferenceFragment {
+       @Override
+       public void onCreate(Bundle savedInstanceState) {
+           super.onCreate(savedInstanceState); 
+           addPreferencesFromResource(R.xml.misc);
+        }
+    }
+	
+    public static class Device extends PreferenceFragment {	
+       @Override
+       public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+           return inflater.inflate(R.layout.devices, container, false);
+        }
+    }
+}  
