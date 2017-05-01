@@ -39,7 +39,7 @@ import com.android.internal.logging.MetricsProto.MetricsEvent;
 
 public class Splash extends Activity {
 
-    private static int SPLASH_TIME_OUT = 1250;
+    private static int SPLASH_DURATION = 1250;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,11 +48,11 @@ public class Splash extends Activity {
         new Handler().postDelayed(new Runnable(){
             @Override
             public void run(){
-                Intent homeIntent = new Intent(Splash.this, Home.class);
-                startActivity(homeIntent);
+                Intent starthomeclass = new Intent(getActivity(), Home.class);
+                startActivity(starthomeclass);
                 finish();
             }
-        },SPLASH_TIME_OUT);
+        },SPLASH_DURATION);
     }
 
     public static class Home extends PreferenceFragment {
