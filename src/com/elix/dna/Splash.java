@@ -35,11 +35,15 @@ import android.view.Surface;
 
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 
+import com.android.settings.SettingsPreferenceFragment;
+
+import com.elix.dna.R;
+
 // import com.elix.dna.Home;
 
-public class Splash extends Activity {
+public class Splash extends PreferenceFragment {
 
-    private static int SPLASH_DURATION = 1250;
+    private static int SPLASH_DURATION = 1200;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,7 +52,7 @@ public class Splash extends Activity {
         new Handler().postDelayed(new Runnable(){
             @Override
             public void run(){
-                Intent starthomeclass = new Intent(getActivity(), Home.class);
+                Intent starthomeclass = new Intent(Splash.this, Home.class);
                 startActivity(starthomeclass);
                 finish();
             }
@@ -60,6 +64,11 @@ public class Splash extends Activity {
        public void onCreate(Bundle savedInstanceState) {
           super.onCreate(savedInstanceState);
           addPreferencesFromResource(R.xml.home);
+       }
+
+    @Override
+    protected int getMetricsCategory() {
+        return MetricsEvent.DNA;
         }
     }
 
@@ -81,8 +90,9 @@ public class Splash extends Activity {
 	
     public static class Device extends PreferenceFragment {	
        @Override
-       public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-           return inflater.inflate(R.layout.devices, container, false);
+       public void onCreate(Bundle savedInstanceState) {
+           super.onCreate(savedInstanceState); 
+           addPreferencesFromResource(R.xml.devices);
         }
     }
 }  

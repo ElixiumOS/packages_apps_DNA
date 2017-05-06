@@ -37,14 +37,15 @@
 
     <!-- Devices -->
     <string name="devices">Supported Devices</string>
-    <string name="device_op3t">OnePlus3T</string>
+    <string name="device_op3t">OnePlus 3 and 3T</string>
     <string name="device_op3t_maintainer">MasterJack1697</string>
 
-    <string name="device_nexus_6">Nexus 6</string>
-    <string name="device_nexus_6_maintainer">MasterJack1697</string>
+    <string name="device_nexus9">HTC Nexus 9 WIFI</string>
+    <string name="device_nexus9_maintainer">MasterJack1697</string>
+ 
+    <string name="device_motoz">Lenovo Moto Z</string>
+    <string name="device_motoz_maintainer">MasterJack1697<string>
 
-    <string name="device_nexus_9">Nexus 9 WIFI</string>
-    <string name="device_nexus_9_maintainer">Cooming Soon</string>
 
     <!-- Some Shortcuts labels -->
     <string name="notif_shortcut_title_short">Statusbar</string>

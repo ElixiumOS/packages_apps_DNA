@@ -13,14 +13,17 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:title="devices" >
 
-    <PreferenceScreen
-        android:key="n6" >
-    <intent
-        android:action="android.intent.action.VIEW"
-        android:data="http://forum.xda-developers.com/nexus-6/development/rom-t3473518" />
-    </PreferenceScreen>
+    <Preference
+        android:layout="@layout/device_card_oneplus3" />
 
 
+    <!-- Coming very soon... -->
+<!--    <Preference
+        android:layout="@layout/device_card_motoz" />
+    <Preference
+        android:layout="@layout/device_card_nexus9" /> -->
+  
 </PreferenceScreen>
