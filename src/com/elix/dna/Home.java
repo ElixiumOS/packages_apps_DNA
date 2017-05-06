@@ -1,5 +1,4 @@
 /*
- * Copyright (C) 2016-2017 AOTP - Android Open Tuning Project
  * Copyright (C) 2017 ElixiumOS
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -39,27 +38,35 @@ import com.android.settings.SettingsPreferenceFragment;
 
 import com.elix.dna.R;
 
-import com.elix.dna.Home;
-
-public class Splash extends PreferenceFragment {
-
-    private static int SPLASH_DURATION = 1200;
+public class Home extends PreferenceFragment {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-   //     setContentView(R.layout.activity_splash);
-        new Handler().postDelayed(new Runnable(){
-            @Override
-            public void run(){
-                Intent homeIntent = new Intent(getActivity(), Home.class);
-                startActivity(homeIntent);
-               // finish();
-            }
-        },SPLASH_DURATION);
+          super.onCreate(savedInstanceState);
+          addPreferencesFromResource(R.xml.home);
     }
 
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-           return inflater.inflate(R.layout.activity_splash, container, false);
+    public static class AboutApp extends PreferenceFragment {
+       @Override
+       public void onCreate(Bundle savedInstanceState) {
+           super.onCreate(savedInstanceState); 
+           addPreferencesFromResource(R.xml.about);
+        }
     }
-}    
+
+    public static class MiscFrag extends PreferenceFragment {
+       @Override
+       public void onCreate(Bundle savedInstanceState) {
+           super.onCreate(savedInstanceState); 
+           addPreferencesFromResource(R.xml.misc);
+        }
+    }
+	
+    public static class Device extends PreferenceFragment {	
+       @Override
+       public void onCreate(Bundle savedInstanceState) {
+           super.onCreate(savedInstanceState); 
+           addPreferencesFromResource(R.xml.devices);
+        }
+    }
+}  

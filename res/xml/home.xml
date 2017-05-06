@@ -29,14 +29,14 @@
 
     <Preference
         android:layout="@layout/misc_card"
-        android:fragment="com.elix.dna.Splash$MiscFrag" />
+        android:fragment="com.elix.dna.Home$MiscFrag" />
 
     <Preference
         android:layout="@layout/device_card"
-        android:fragment="com.elix.dna.Splash$Device" />
+        android:fragment="com.elix.dna.Home$Device" />
 
     <Preference
         android:layout="@layout/about_card"
-        android:fragment="com.elix.dna.Splash$AboutApp" />
+        android:fragment="com.elix.dna.Home$AboutApp" />
 
 </PreferenceScreen>

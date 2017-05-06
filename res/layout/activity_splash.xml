@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2016-2017 AOTP - Android Open Tuning Project
+<!-- Copyright (C) 2017 ElixiumOS
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -28,15 +28,15 @@
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:scaleType="fitXY"
-        android:src="@drawable/splash_icon"
+        android:src="@drawable/ic_launcher_aotp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="167dp" />
+        android:layout_marginTop="150dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/aotp_splash"
+        android:text="ElixiumOS"
         android:textSize="35dp"
         android:textStyle="bold"
         android:id="@+id/textView"
