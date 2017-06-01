@@ -17,8 +17,8 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Gneric strings and title -->
-    <string name="app_name">DNA+</string>
-    <string name="aotp_splash">Elixium</string>
+    <string name="app_name">DNA</string>
+    <string name="splash_title">ElixiumOS</string>
     <string name="cancel">Cancel</string>
     <string name="save">Save</string>
 
