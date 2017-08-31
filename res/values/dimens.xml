@@ -11,7 +11,7 @@
      limitations under the License.
 -->
 <resources>
-  
+
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="global_activity_margin">6dp</dimen>
     <dimen name="padding_small">5dp</dimen>

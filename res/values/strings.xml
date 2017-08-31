@@ -59,4 +59,9 @@
     <string name="gestures_title">Gestures</string>
     <string name="gestures_summary">New ways to use your device</string>
 
+
+<!-- Start of menus strings -->
+
+    <string name="double_tap_sleep_navbar">Double tap to sleep on navbar</string>
+
 </resources>

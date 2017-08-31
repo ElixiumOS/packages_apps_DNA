@@ -2,7 +2,9 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
 
-    <Preference
-        android:title="Empty fragment here" />
+  <com.elix.dna.preferences.SystemSettingSwitchPreference
+      android:key="double_tap_sleep_navbar"
+      android:title="@string/double_tap_sleep_navbar"
+      android:defaultValue="true" />
 
 </PreferenceScreen>
