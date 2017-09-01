@@ -26,13 +26,16 @@ import android.widget.Button;
 import android.widget.Toast;
 import android.support.v7.widget.CardView;
 import com.elix.dna.fragments.GestureFragment;
+import com.elix.dna.fragments.StatusbarFragment;
 import com.elix.dna.R;
 
 public class Home extends Activity {
 
     private CardView mTestcard1;
+    private CardView mStatusbarcard;
 
     private String FGRAGMENT_1 = "fragment_1";
+    private String STATUSBAR_CARD= "statusbar_card";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -46,6 +49,23 @@ public class Home extends Activity {
             public void onClick(View v) {
                 setContentView(R.layout.container_layout);
                 GestureFragment fg1 = new GestureFragment();
+                FragmentManager fmanager = getFragmentManager();
+                FragmentTransaction ftransaction = fmanager.beginTransaction();
+                fmanager.beginTransaction();
+                ftransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
+                ftransaction.replace(R.id.fgcontainer, fg1, FGRAGMENT_1);
+                ftransaction.addToBackStack(fg1.getClass().getName());
+                ftransaction.commit();
+            }
+        });
+
+        // Statusbar CardView
+        mStatusbarcard = findViewById(R.id.statusbar_card);
+        mStatusbarcard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.container_layout);
+                StatusbarFragment fg1 = new StatusbarFragment();
                 FragmentManager fmanager = getFragmentManager();
                 FragmentTransaction ftransaction = fmanager.beginTransaction();
                 fmanager.beginTransaction();
