@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
- 
+
 package com.elix.dna;
 
 import android.app.Activity;
@@ -73,8 +73,6 @@ public class Home extends Activity {
         FragmentTransaction ftransaction = fmanager.beginTransaction();
 
         if (fmanager.getBackStackEntryCount() > 0) {
-            ftransaction.remove(fg1);
-            ftransaction.commit();
             Intent homeIntent = new Intent(Home.this, Home.class);
             startActivity(homeIntent);
         } else {

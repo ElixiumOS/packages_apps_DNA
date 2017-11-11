@@ -22,9 +22,6 @@
    </style>
 
     <!-- Splash Theme. -->
-    <style name="SplashTheme" parent="android:Theme.Material.Light.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-    </style>
+    <style name="SplashTheme" parent="android:Theme.Light.NoTitleBar.Fullscreen" />
 
 </resources>

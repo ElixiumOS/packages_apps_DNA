@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2016-2017 AOTP - Android Open Tuning Project
+<!-- Copyright (C) 2017 ElixiumOS
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
@@ -34,15 +34,9 @@
 
     <!-- Devices -->
     <string name="devices">Supported Devices</string>
-    <string name="device_op3t">OnePlus 3 and 3T</string>
-    <string name="device_op3t_maintainer">MasterJack1697</string>
 
-    <string name="devices">Supported Devices</string>
-    <string name="device_op5">OnePlus 5</string>
+    <string name="device_op5">OnePlus 5T</string>
     <string name="device_op5_maintainer">MasterJack1697</string>
-
-    <string name="device_nexus9">HTC Nexus 9 WIFI</string>
-    <string name="device_nexus9_maintainer">MasterJack1697</string>
 
     <string name="device_motoz">Lenovo Moto Z</string>
     <string name="device_motoz_maintainer">MasterJack1697</string>

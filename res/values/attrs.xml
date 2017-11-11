@@ -17,10 +17,4 @@
     <attr name="colorAccent" format="color"/>
     <attr name="iconAccent" format="color" />
 
-    <!-- Flag indicating whether this window should have an Action Bar in place of the usual title bar. -->
-    <attr name="windowActionBar" format="boolean" />
-
-    <!-- Flag indicating whether there should be no title on this window. -->
-    <attr name="windowNoTitle" format="boolean" />
-
 </resources>

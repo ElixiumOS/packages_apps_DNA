@@ -10,34 +10,31 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/global_activity_margin"
-    android:paddingLeft="@dimen/global_activity_margin"
-    android:paddingRight="@dimen/global_activity_margin"
-    android:paddingTop="@dimen/global_activity_margin"
-    tools:context="com.elix.dna.Splash">
+    android:layout_height="match_parent" >
 
     <ImageView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/splash_icon"
-        android:layout_alignParentTop="true"
+        android:id="@+id/splash_icon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/launcher_icon"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="150dp" />
+        android:layout_marginTop="120dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/splash_title"
-        android:textSize="35dp"
-        android:textStyle="bold"
-        android:id="@+id/textView"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="32dp" />
+        android:layout_marginBottom="40dp"
+        android:text="@string/splash_title"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
 
 </RelativeLayout>

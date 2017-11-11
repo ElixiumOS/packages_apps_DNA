@@ -18,23 +18,20 @@ package com.elix.dna;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.os.Handler;
 import android.os.Bundle;
+import android.os.Handler;
 
-import com.elix.dna.Home;
-
+import com.mj.globaltest.Home;
 import com.elix.dna.R;
-
-
 
 public class Splash extends Activity {
 
     private static int SPLASH_DURATION = 1100;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.splash);
+        setContentView(R.layout.splash_layout);
+
         new Handler().postDelayed(new Runnable(){
             @Override
             public void run(){
