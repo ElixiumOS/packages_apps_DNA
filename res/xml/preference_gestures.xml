@@ -3,6 +3,6 @@
 
 
     <Preference
-        android:title="wELCOME" />
+        android:title="Empty fragment here" />
 
 </PreferenceScreen>

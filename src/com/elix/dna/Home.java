@@ -25,12 +25,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 import android.support.v7.widget.CardView;
-import com.elix.dna.TestFragment;
+import com.elix.dna.fragments.GestureFragment;
 import com.elix.dna.R;
 
 public class Home extends Activity {
 
-//    private Button mTestbutton1;
     private CardView mTestcard1;
 
     private String FGRAGMENT_1 = "fragment_1";
@@ -40,22 +39,13 @@ public class Home extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home);
 
-//        mTestbutton1 = findViewById(R.id.button_test1);
-//        mTestbutton1.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Toast.makeText(Home.this, "activity launched", Toast.LENGTH_SHORT).show();
-//                Intent backIntent = new Intent(Home.this, Test1.class);
-//                startActivity(backIntent);
-//            }
-//        });
         // Test card that open a test fragment
-        mTestcard1 = findViewById(R.id.card_test1);
+        mTestcard1 = findViewById(R.id.gesture_card);
         mTestcard1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 setContentView(R.layout.container_layout);
-                TestFragment fg1 = new TestFragment();
+                GestureFragment fg1 = new GestureFragment();
                 FragmentManager fmanager = getFragmentManager();
                 FragmentTransaction ftransaction = fmanager.beginTransaction();
                 fmanager.beginTransaction();

@@ -56,5 +56,7 @@
     <string name="ls_summary">Customize lockscreen and her functions</string>
     <string name="misc_title">Misc</string>
     <string name="misc_summary">More misc customizations!</string>
+    <string name="gestures_title">Gestures</string>
+    <string name="gestures_summary">New ways to use your device</string>
 
 </resources>
