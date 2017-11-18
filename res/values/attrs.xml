@@ -17,4 +17,12 @@
     <attr name="colorAccent" format="color"/>
     <attr name="iconAccent" format="color" />
 
+    <!-- Base attributes available to CustomSeekBarPreference. -->
+    <declare-styleable name="CustomSeekBarPreference">
+        <attr name="interval" format="integer" />
+        <attr name="min" format="integer" />
+        <attr name="units" format="string|reference" />
+        <attr name="defaultText" format="string|reference" />
+    </declare-styleable>
+
 </resources>
