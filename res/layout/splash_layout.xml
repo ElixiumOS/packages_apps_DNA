@@ -21,7 +21,7 @@
         android:id="@+id/splash_icon"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:src="@drawable/launcher_icon"
+        android:src="@drawable/ic_launcher_dna"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="120dp" />
 
