@@ -21,7 +21,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-import com.mj.globaltest.Home;
+import com.elix.dna.Home;
 import com.elix.dna.R;
 
 public class Splash extends Activity {
