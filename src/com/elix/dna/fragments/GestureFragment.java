@@ -17,14 +17,28 @@
 package com.elix.dna.fragments;
 
 import android.os.Bundle;
-import android.preference.PreferenceFragment;
+import android.support.v7.preference.Preference;
+
+import com.android.settings.SettingsPreferenceFragment;
+import com.android.internal.logging.nano.MetricsProto;
+
 import com.elix.dna.R;
 
-public class GestureFragment extends PreferenceFragment {
+public class GestureFragment extends SettingsPreferenceFragment implements
+        Preference.OnPreferenceChangeListener {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.preference_gestures);
+    }
+
+    @Override
+    public int getMetricsCategory() {
+        return MetricsProto.MetricsEvent.DNA;
+    }
+
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        return false;
     }
 }
